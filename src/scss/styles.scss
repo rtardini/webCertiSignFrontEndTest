@@ -1,0 +1,287 @@
+//Open Sans font family
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&font-display=swap);
+
+//Pallete Colors
+$color-pink:#d2365b;
+$color-blue: #004d8f;
+$color-gray: #7e7c7d;
+$color-orange: #ef7a19;
+$color-lightorange:#feead8;
+$color-lightgray: #f9f9f9;
+$color-darkgray: #666666;
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+.container{
+    max-width: 1010px;
+}
+
+.bg-roundPromo{
+    background-color: $color-pink;
+}
+
+.bg-roundPromoItem{
+    background-color: $color-blue;
+}
+
+.btn-outline-orange {
+    color: $color-orange;
+    border-color:$color-orange; 
+    font-size: 14px;
+}
+
+.btn-outline-orange:hover {
+      color: #fff;
+      background-color: $color-orange;
+      border-color:$color-orange; 
+}
+
+.btn-outline-orange.disabled, .btn-outline-orange:disabled {
+      color: $color-orange;
+      background-color: transparent; 
+}
+
+.btn-outline-orange:not(:disabled):not(.disabled):active, 
+.btn-outline-orange:not(:disabled):not(.disabled).active,
+.show > .btn-outline-orange.dropdown-toggle {
+      color: #fff;
+      background-color:$color-orange;
+      border-color: $color-orange; 
+}
+
+.color-gray{  color: $color-gray; }
+.color-orange{  color: $color-orange; }
+.color-blue{  color: $color-blue; }
+
+.promo-cupon-subtitle{
+    color: $color-blue;
+    font-size:16px;
+    font-weight: normal;
+}
+
+.promo-cupon-code{
+    color: $color-orange;
+    font-size:16px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.promo-cupon-desc{
+    font-size:12px;
+    font-weight: normal;
+    display:  -webkit-box;
+}
+
+.promo-discount-desc{
+    color: $color-blue;
+    font-size:14px;
+    
+}
+
+.modal-h3{
+    font-size: 22px;
+    font-style: normal;
+    color: $color-orange;
+    line-height: 1.8;
+}
+
+.modal-text-default {
+    color: $color-gray;
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+.modal-text-sub {
+    line-height: 1.8;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+}
+
+.modal-text-info{
+    color: $color-blue;
+}
+
+.modal-text-small{
+    color: $color-gray;
+    font-size: 12px;
+    font-style:italic; 
+    font-variant: normal; 
+}
+
+.modal-div-close {
+    position: absolute;
+    margin-right: 25px;
+    right: 0;
+    z-index: 999;
+}
+
+.custom-header{
+    height: 47px;
+    
+}
+
+.custom-navbar {
+    padding: 0;
+    font-family: 'Open Sans Light';
+}
+
+.navbar-toggler {
+    border: 0px;
+}
+
+.custom-toggler {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(239,122,25, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(239,122,25);
+  } 
+
+  .nav-link:hover{
+      color: $color-orange;      
+  }
+
+  #head-box{
+    height: 46px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    }
+
+  #head-box-login{
+    position: relative;
+    float: right;
+  }
+
+  #head-box-user{
+    text-align: right;
+    padding-right: 10px;
+    color: $color-orange;
+    font-size: 14px;
+    border-right: 1px solid $color-orange;
+    display: inline;
+}
+#head-box-status{
+    color: $color-gray;
+    padding-left: 6px;
+    font-size: 14px;
+    display: inline;
+}
+
+a.log-link{
+    text-decoration: underline;
+    color: $color-darkgray;
+}
+
+@media (min-width: 576px) {
+    #boxCupom{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+}
+
+@media (max-width: 767px){
+
+    .custom-navbar {
+        font-size: 14px;
+    }
+
+    .custom-navbar{
+        background-color: $color-lightgray;    
+    }
+
+    .border-bottom{
+        border-bottom:0px!important;;
+    }
+
+    .nav-link-custom {
+        display: block;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    a.nav-link-custom{
+        color: $color-orange;
+    }
+
+    .nav-link-custom-bt {
+        border-bottom: 1px solid $color-lightorange;
+    }
+
+    .nav-desc-custom {
+        border-left: 3px solid $color-orange;
+        padding-left: 10px;
+    }
+
+    #head-box{
+        position: absolute;
+        margin-right: 15px;
+        right: 5px;
+        z-index: 999;
+    }
+
+    #navbarSupportedContent {
+        background-color: #fff;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        z-index: 998;
+    }
+
+    #carouselExampleSlidesOnly{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+}
+
+@media (min-width: 768px) {
+    .custom-header{
+        height:73px;
+        background-color: $color-lightgray;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    }
+    #head-box{
+        height: auto;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #head-box-user{
+        padding-right: 0;
+        display: block;
+        border-right: none;
+    }
+    #head-box-status{
+        padding-left: 0;
+        display: block;
+    }
+}    
+
+@media (min-width: 992px){
+    #boxCupom{
+        margin-left:0px;
+        
+    }
+    .modal-lg-custom {
+        max-width: 980px;
+    }
+
+}
