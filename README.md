@@ -20,4 +20,4 @@ Página e elementos gráficos se encontram na pasta 'src';
 
 Observações:
 - Pasta de configuração do node-modules não inclusa no repositório.
-- Projeto pendente de conclusão, desenvolvimento do body em desenvolvimento.
+- Projeto pendente de conclusão, desenvolvimento do body incompleto.
